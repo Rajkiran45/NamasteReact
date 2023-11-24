@@ -13,7 +13,7 @@ const Header = ()=>{
     },[]);
 
     const {loggedInUser} = useContext(UserContext);
-    console.log("Logged User",loggedInUser);
+    // console.log("Logged User",loggedInUser);
 
 
     // Selector

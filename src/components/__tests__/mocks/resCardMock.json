@@ -1,0 +1,85 @@
+{
+    "info": {
+        "id": "237054",
+        "name": "Cafe Bahar since 1973",
+        "cloudinaryImageId": "yrycuz88yy7lm2qbsdv6",
+        "areaName": "Basheer Bagh",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+            "Biryani",
+            "Chinese",
+            "Indian",
+            "Kebabs",
+            "Tandoor"
+        ],
+        "avgRating": 4.2,
+        "feeDetails": {
+            "restaurantId": "237054",
+            "fees": [
+                {
+                    "name": "BASE_DISTANCE",
+                    "fee": 3000
+                },
+                {
+                    "name": "BASE_TIME"
+                },
+                {
+                    "name": "ANCILLARY_SURGE_FEE"
+                }
+            ],
+            "totalFee": 3000
+        },
+        "parentId": "316607",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "10K+",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 2.4,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25 mins",
+            "lastMileTravelString": "2.4 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-11-24 23:59:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-a04c607a-992d-4def-9fe1-f686f139ae50"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/cafe-bahar-since-1973-basheer-bagh-hyderabad-237054",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

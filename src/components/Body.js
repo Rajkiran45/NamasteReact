@@ -14,7 +14,7 @@ const Body = () => {
 
    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
-    console.log("Body Rendered: ", listofRestaurants);
+    // console.log("Body Rendered: ", listofRestaurants);
 
    useEffect(()=>{
     fetchData();
@@ -26,7 +26,6 @@ const Body = () => {
     );
         const json = await data.json();
 
-        console.log(json);
         //Optional Chaining
         setListofRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -49,6 +48,7 @@ const Body = () => {
                 <div className="search m-4 p-4">
                     <input 
                         type="text" 
+                        data-testid = "searchInput"
                         className="border border-solid border-black px-4 py-2 rounded-lg" 
                         placeholder="Search" 
                         value={searchText}
@@ -59,9 +59,11 @@ const Body = () => {
                     <button 
                     className="bg-green-100 m-4 px-4 py-2 rounded-lg shadow-lg"
                         onClick={()=>{
-                            console.log(searchText);
+                            // console.log(searchText);
                             const filteredRestaurants = listofRestaurants.filter((res)=>
-                                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                                res.info.name.toLowerCase().includes(searchText.toLowerCase()) ||
+                                res.info.cuisines.join(", ").toLowerCase().includes(searchText.toLowerCase()) ||
+                                res.info.areaName.toLowerCase().includes(searchText.toLowerCase()) 
                             );
                             setFilteredRestaurants(filteredRestaurants);
                         }}
@@ -74,7 +76,7 @@ const Body = () => {
                      className="bg-gray-200 px-8 py-2 rounded-lg shadow-lg"
                      onClick={()=>{
                          const filteredList = listofRestaurants.filter(
-                             (res)=>res.info.avgRating > 4
+                             (res)=>res.info.avgRating > 4.5
                              );
                              setListofRestaurants(filteredList);
                             }}>Top Rated Restaurant
